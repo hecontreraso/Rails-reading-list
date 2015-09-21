@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: books
+#
+#  id          :integer          not null, primary key
+#  title       :string
+#  author      :string
+#  description :text
+#  amazon_id   :string
+#  created_at  :datetime
+#  updated_at  :datetime
+#  rating      :integer
+#  finished_on :date
+#  keywords    :text
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  author: MyString
+  description: MyText
+  amazon_id: MyString
+
+two:
+  title: MyString
+  author: MyString
+  description: MyText
+  amazon_id: MyString
