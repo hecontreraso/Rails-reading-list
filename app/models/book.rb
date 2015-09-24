@@ -28,6 +28,10 @@ class Book < ActiveRecord::Base
 
   before_save :set_keywords
 
+  # validates :title, presence: true 
+  # validates :author, presence: true 
+  # validates :rating, presence: true 
+
   def finished?
     finished_on.present?
   end
