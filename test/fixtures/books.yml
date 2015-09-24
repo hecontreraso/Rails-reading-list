@@ -17,13 +17,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   title: Title
   author: Author
   description: Description
   amazon_id: MyString1234
+  rating: 4
 
 two:
+  id: 2
   title: MyString
   author: MyString
   description: MyText
   amazon_id: MyString
+  rating: 5

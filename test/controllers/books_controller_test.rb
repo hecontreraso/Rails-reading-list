@@ -18,7 +18,13 @@ class BooksControllerTest < ActionController::TestCase
 
   test "should create book" do
     assert_difference('Book.count') do
-      post :create, book: { amazon_id: @book.amazon_id, author: @book.author, description: @book.description, title: @book.title }
+      post :create, book: { 
+        amazon_id: @book.amazon_id,
+        author: @book.author,
+        description: @book.description,
+        title: @book.title,
+        rating: @book.rating
+      }
     end
 
     assert_redirected_to book_path(assigns(:book))
