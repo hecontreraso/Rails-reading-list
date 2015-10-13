@@ -40,3 +40,6 @@ gem 'annotate'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :test do
+	gem 'shoulda'
+end

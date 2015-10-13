@@ -28,7 +28,7 @@ class Book < ActiveRecord::Base
 
   before_save :set_keywords
 
-  validates :title, presence: true 
+  validates :title, presence: true, uniqueness: true
   validates :author, presence: true 
   validates :description, presence: true 
   validates :rating, presence: true 
